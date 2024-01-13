@@ -16,7 +16,7 @@ def get_unique_short_id():
     return ''.join(random.choice(characters) for _ in range(SHORT_LENGTH))
 
 
-@app.route('/',  methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def index_view():
     """Генерация короткой ссылки при вводе пользователем."""
     form = URLForm()

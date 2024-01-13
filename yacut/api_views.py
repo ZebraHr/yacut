@@ -28,15 +28,15 @@ def create_short():
     if URLMap.query.filter_by(short=short_url).first():
         raise InvalidAPIUsage(
             'Предложенный вариант короткой ссылки уже существует.'
-            )
+        )
     if len(short_url) > 16:
         raise InvalidAPIUsage(
             'Указано недопустимое имя для короткой ссылки'
-            )
+        )
     new_url = URLMap(
-         original=long_url,
-         short=short_url
-     )
+        original=long_url,
+        short=short_url
+    )
     db.session.add(new_url)
     db.session.commit()
     short_link = urljoin(BASE_URL, new_url.short)
