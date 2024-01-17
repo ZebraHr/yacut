@@ -11,5 +11,8 @@ migrate = Migrate(app, db)
 # BASE_URL = 'http://127.0.0.1:5000/'
 BASE_URL = 'http://localhost/'
 SHORT_LENGTH = 6
+LENGTH_LIMIT = 16
+MIN_LENGHT = 1
+MAX_LENGHT = 256
 
 from . import api_views, error_handlers, views

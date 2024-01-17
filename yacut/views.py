@@ -4,7 +4,6 @@ from urllib.parse import urljoin
 
 from flask import flash, redirect, render_template, Markup
 
-
 from . import app, db, BASE_URL, SHORT_LENGTH
 from .forms import URLForm
 from .models import URLMap
