@@ -79,7 +79,6 @@ GET ... http://127.0.0.1:5000/api/id/{short-is}/
 ```
 
 ### Автор
-Анна Победоносцева.
-Студент Яндекс Практикума "Python-разаботчик плюс".
-г. Москва.
-GitHub: https://github.com/ZebraHr
+Анна Победоносцева
+
+[GitHub](https://github.com/ZebraHr)
